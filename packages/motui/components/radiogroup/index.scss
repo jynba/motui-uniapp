@@ -1,0 +1,21 @@
+.mot-radio-group {
+  display: inline-block;
+
+  .mot-radio {
+    margin-bottom: 5px;
+  }
+
+  &--horizontal {
+    .mot-radio {
+      display: inline-flex !important;
+      margin-right: 10px !important;
+
+      &--round {
+        .mot-radio__label {
+          margin: 0 6px !important;
+        }
+      }
+
+    }
+  }
+}

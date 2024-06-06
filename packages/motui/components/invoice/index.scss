@@ -1,0 +1,42 @@
+@import '../button/index';
+@import '../radiogroup/index';
+@import '../radio/index';
+@import '../form/index';
+@import '../formitem/index';
+
+.mot-theme-dark {
+  .mot-invoice {
+    .mot-invoice__submit {
+      background: $dark-background2;
+    }
+  }
+}
+
+.mot-invoice {
+  position: relative;
+  width: 100%;
+
+  .mot-cell {
+    align-items: baseline;
+  }
+
+  &__submit {
+    position: fixed;
+    bottom: 0;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: $invoice-padding;
+    background: #fff;
+  }
+
+  .mot-radio {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 0;
+  }
+}

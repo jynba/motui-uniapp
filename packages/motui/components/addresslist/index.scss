@@ -1,0 +1,39 @@
+@import '../button/index';
+@import '../swipe/index';
+
+.mot-theme-dark {
+  .mot-address-list {
+    &__bottom {
+      background-color: $dark-background2;
+    }
+  }
+}
+
+.mot-address-list {
+  overflow: hidden;
+
+  &:last-child {
+    padding-bottom: 84px;
+  }
+
+  &__bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    left: 0;
+    z-index: 100000;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 18px 24px;
+    background-color: $addresslist-bg;
+  }
+
+  .mot-address-list__mask-bottom {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background-color: transparent;
+  }
+}

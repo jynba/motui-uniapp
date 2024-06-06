@@ -1,0 +1,158 @@
+.mot-theme-dark {
+  .mot-navbar {
+    color: $dark-color;
+    background: $dark-background;
+    box-shadow: $dark-background2;
+
+    .title {
+      color: $dark-color;
+    }
+  }
+}
+
+.mot-navbar {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: $navbar-height;
+  padding: $navbar-padding;
+  overflow: hidden;
+  font-size: $navbar-title-base-font;
+  line-height: $navbar-height;
+  color: $navbar-color;
+  background: $navbar-background;
+  box-shadow: $navbar-box-shadow;
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &--border {
+    border-bottom: 1px solid #eee;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.mot-navbar--safe-area-inset-top {
+      height: calc($navbar-height + constant(safe-area-inset-top));
+      height: calc($navbar-height + var(--status-bar-height));
+    }
+  }
+
+  &--placeholder {
+    display: block;
+    width: 100%;
+  }
+
+  &--safe-area-inset-top {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: var(--status-bar-height);
+  }
+
+
+
+  &--clickable {
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      content: ' ';
+      background-color: $black;
+      border: inherit;
+      border-color: $black;
+      border-radius: inherit;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  :deep(.motui-iconfont) {
+    .mot-icon-left {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    .text {
+      display: -webkit-box;
+      min-width: $navbar-title-width;
+      overflow: hidden;
+      font-size: $navbar-title-font;
+      font-weight: $navbar-title-font-weight;
+      color: $navbar-title-font-color;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+
+    &.icon {
+      .icon {
+        margin: $navbar-title-icon-margin;
+      }
+    }
+
+    .icon {
+      font-size: 0;
+    }
+
+    :deep(.mot-icon) {
+      display: inline;
+    }
+
+    &-desc {
+      font-size: $cell-title-desc-font;
+    }
+
+    .text__title {
+      display: inline-block;
+    }
+
+    :deep(.mot-tabs__titles) {
+      background: $white;
+    }
+
+    :deep(.mot-tab-pane) {
+      display: none;
+    }
+  }
+
+  &__title ::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__left {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-size: $cell-desc-font;
+    color: $cell-desc-color;
+    cursor: pointer;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-size: $cell-desc-font;
+    color: $cell-desc-color;
+    cursor: pointer;
+  }
+}

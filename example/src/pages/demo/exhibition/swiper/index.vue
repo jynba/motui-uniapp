@@ -1,0 +1,238 @@
+<script lang="ts">
+import type { Ref } from 'vue'
+import { onMounted, reactive, ref, toRefs } from 'vue'
+
+export default {
+  setup() {
+    const swiper = ref(null) as Ref
+    const state = reactive({
+      page: 2,
+      page2: 0,
+      page3: 0,
+      page4: 0,
+      current: 1,
+      current1: 3,
+      list: [
+        'https://storage.360buyimg.com/jdc-article/NutUItaro34.jpg',
+        'https://storage.360buyimg.com/jdc-article/NutUItaro2.jpg',
+        'https://storage.360buyimg.com/jdc-article/welcomemotui.jpg',
+        'https://storage.360buyimg.com/jdc-article/fristfabu.jpg',
+      ],
+      list2: [
+        'https://storage.360buyimg.com/jdc-article/NutUItaro34.jpg',
+        'https://storage.360buyimg.com/jdc-article/NutUItaro2.jpg',
+        'https://storage.360buyimg.com/jdc-article/welcomemotui.jpg',
+        'https://storage.360buyimg.com/jdc-article/fristfabu.jpg',
+      ],
+      list1: [] as string[],
+    })
+    const change = (index: number) => {
+      state.current = index + 1
+    }
+    const change1 = (index: number) => {
+      state.current1 = index + 1
+    }
+    const handlePrev = () => {
+      swiper.value.prev()
+    }
+    const handleNext = () => {
+      swiper.value.next()
+    }
+    onMounted(() => {
+      setTimeout(() => {
+        state.list1 = state.list.slice()
+        state.list2.splice(1, 1)
+      }, 3000)
+    })
+    return {
+      ...toRefs(state),
+      swiper,
+      change,
+      change1,
+      handlePrev,
+      handleNext,
+    }
+  },
+}
+</script>
+
+<template>
+  <div class="demo">
+    <h2 class="title">
+      基础用法
+    </h2>
+    <view class="demo-box">
+      <mot-swiper :init-page="page" :pagination-visible="true" pagination-color="#426543" pagination-unselected-color="#808080" auto-play="2000">
+        <mot-swiper-item v-for="item in list" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+      </mot-swiper>
+    </view>
+    <h2 class="title">
+      异步加载(3s)
+    </h2>
+    <view class="demo-box">
+      <mot-swiper :init-page="page" :pagination-visible="true" pagination-color="#426543" auto-play="2000">
+        <mot-swiper-item v-for="item in list1" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+      </mot-swiper>
+    </view>
+    <h2 class="title">
+      动态加载
+    </h2>
+    <view class="demo-box">
+      <mot-swiper :init-page="page" :pagination-visible="true" pagination-color="#426543" auto-play="2000">
+        <mot-swiper-item v-for="item in list2" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+      </mot-swiper>
+    </view>
+    <h2 class="title">
+      自定义大小
+    </h2>
+    <view class="demo-box">
+      <mot-swiper :init-page="page2" :loop="false" width="300">
+        <mot-swiper-item v-for="item in list" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+      </mot-swiper>
+    </view>
+    <h2 class="title">
+      自定义指示器
+    </h2>
+    <view class="demo-box">
+      <mot-swiper :init-page="page3" :loop="true" @change="change">
+        <mot-swiper-item v-for="item in list" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+        <template #page>
+          <div class="page">
+            {{ current }}/4
+          </div>
+        </template>
+      </mot-swiper>
+    </view>
+    <h2 class="title">
+      自定义指示器(异步加载3s)
+    </h2>
+    <view class="demo-box">
+      <mot-swiper :init-page="page" :loop="true" auto-play="2000" @change="change1">
+        <mot-swiper-item v-for="item in list1" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+        <template #page>
+          <div class="page">
+            {{ current1 }}/4
+          </div>
+        </template>
+      </mot-swiper>
+    </view>
+    <h2 class="title">
+      手动切换
+    </h2>
+    <view class="demo-box">
+      <mot-swiper ref="swiper" :init-page="page" :loop="true">
+        <mot-swiper-item v-for="item in list" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+      </mot-swiper>
+      <view class="mot-swiper-btns">
+        <span class="mot-swiper-btns__left" @click="handlePrev">
+          <mot-icon name="left" />
+        </span>
+        <span class="mot-swiper-btns__left" @click="handleNext">
+          <mot-icon name="right" />
+        </span>
+      </view>
+    </view>
+    <h2 class="title">
+      垂直方向
+    </h2>
+    <view class="demo-box">
+      <mot-swiper
+        :init-page="page4"
+        :loop="true"
+        auto-play="3000"
+        direction="vertical"
+        height="150"
+        :pagination-visible="true"
+        custom-style="height: 150px"
+      >
+        <mot-swiper-item v-for="item in list" :key="item">
+          <image :src="item" alt="" />
+        </mot-swiper-item>
+      </mot-swiper>
+    </view>
+  </div>
+</template>
+
+<style lang="scss">
+.demo-box {
+  position: relative;
+  .mot-swiper-item {
+    height: 150px;
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.vertical-center {
+    .mot-swiper-item {
+      height: 300px;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .mot-swiper-pagination-vertical {
+    .pagination {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      &.active {
+        height: 18px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .page {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 46px;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+  }
+  .mot-swiper-btns {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    .mot-swiper-btns__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+</style>
+
+<route lang="json">
+{
+  "style": {
+    "navigationBarTitleText": "Swiper"
+  }
+}
+</route>

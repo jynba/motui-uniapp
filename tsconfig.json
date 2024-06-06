@@ -1,0 +1,11 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "vite/client",
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types"
+    ]
+  }
+}

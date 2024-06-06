@@ -1,0 +1,97 @@
+.mot-icon {
+  position: relative;
+  display: inline-block;
+  width: $icon-width;
+  height: $icon-height;
+  line-height: $icon-line-height;
+  text-align: right;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__img {
+    width: $icon-width;
+    height: $icon-height;
+    object-fit: contain;
+  }
+
+  &-loading,
+  &-loading1 {
+    display: inline-block;
+    animation: rotation 1s infinite linear;
+  }
+
+  --animate-duration: 1s;
+  --animate-delay: 0s;
+
+  &-am-infinite {
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  &-am-jump {
+    animation-name: motJumpOne;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: ease;
+    animation-delay: var(--animate-delay);
+
+    &.mot-icon-am-infinite {
+      animation-name: motJump;
+    }
+  }
+
+  &-am-rotate {
+    animation-name: rotation;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: linear;
+    animation-delay: var(--animate-delay);
+
+    &.mot-icon-am-infinite {
+      animation-direction: normal;
+    }
+  }
+
+  &-am-blink {
+    animation-name: motBlink;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+    animation-delay: var(--animate-delay);
+  }
+
+  &-am-breathe {
+    animation-name: motBreathe;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--animate-delay);
+  }
+
+  &-am-flash {
+    animation-name: motFlash;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--animate-delay);
+  }
+
+  &-am-bounce {
+    animation-name: motBounce;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--animate-delay);
+
+    &.mot-icon-am-infinite {
+      animation-direction: normal;
+    }
+  }
+
+  &-am-shake {
+    animation-name: motShake;
+    animation-duration: var(--animate-duration);
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--animate-delay);
+  }
+}

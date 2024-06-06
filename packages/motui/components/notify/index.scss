@@ -1,0 +1,53 @@
+@import '../popup/index';
+
+.mot-fade-enter-active {
+  transition: opacity 1s;
+}
+
+.mot-fade-leave-active {
+  transition: opacity 1s;
+}
+
+.mot-fade-enter-from,
+.mot-fade-leave-to {
+  opacity: 0;
+}
+
+.mot-notify {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: $notify-height;
+  padding: $notify-padding;
+  font-size: $notify-font-size;
+  line-height: $notify-line-height;
+  color: $notify-text-color;
+  text-align: center;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+
+  &--base {
+    background: $notify-base-background-color;
+  }
+
+  &--primary {
+    background: $notify-primary-background-color;
+  }
+
+  &--success {
+    background: $notify-success-background-color;
+  }
+
+  &--danger {
+    background: $notify-danger-background-color;
+  }
+
+  &--warning {
+    background: $notify-warning-background-color;
+  }
+
+  view {
+    width: 100%;
+    text-align: center;
+  }
+}

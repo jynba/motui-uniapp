@@ -1,0 +1,23 @@
+{
+  "name": "@motui-uniapp/docs",
+  "type": "module",
+  "version": "1.0.2",
+  "private": true,
+  "description": "MotUI for uniapp docs",
+  "keywords": [
+    "motui",
+    "docs"
+  ],
+  "scripts": {
+    "dev": "vitepress dev --port 9999",
+    "build": "vitepress build",
+    "serve": "vitepress serve --port 6173"
+  },
+  "dependencies": {
+    "motui-uniapp": "workspace:^",
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@vite-pwa/vitepress": "^0.3.1"
+  }
+}

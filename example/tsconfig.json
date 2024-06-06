@@ -1,0 +1,33 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types",
+      "motui-uniapp/global.d.ts"
+    ],
+    "sourceMap": true
+  },
+  "include": [
+    "node_modules/motui-uniapp/global.d.ts",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/pages/demo/business/category/data.js",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/utils/touchEmulator.js"
+  ],
+  "vueCompilerOptions": {
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+  }
+}

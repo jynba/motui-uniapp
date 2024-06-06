@@ -1,0 +1,18 @@
+.mot-ellipsis {
+  display: flex;
+
+  .mot-ellipsis__text {
+    display: inline;
+    color: $ellipsis-expand-collapse-color;
+    cursor: hand;
+  }
+
+  .mot-ellipsis__wordbreak {
+    word-break: break-all;
+  }
+}
+
+.mot-ellipsis__copy {
+  position: absolute;
+  top: -999999px;
+}

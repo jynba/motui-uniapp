@@ -1,0 +1,74 @@
+.mot-theme-dark {
+  .mot-switch {
+    &.mot-switch-close {
+      background-color: $dark-background4;
+    }
+  }
+}
+
+.mot-switch {
+  display: inline-flex;
+  flex: 0 0 auto; // 防止被压缩
+  align-items: center;
+  cursor: pointer;
+  background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  border-radius: $switch-border-radius;
+
+  .mot-icon-loading1 {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+  }
+
+  &.mot-switch-close {
+    background-color: $switch-close-bg-color;
+  }
+
+  .mot-switch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+
+    .mot-switch-label {
+      font-size: $font-size-1;
+      color: $white;
+
+      &.open {
+        transform: translateX(-16px);
+      }
+
+      &.close {
+        transform: translateX(16px);
+      }
+    }
+  }
+
+  &.mot-switch-disabled {
+    opacity: 0.6;
+  }
+
+  &.mot-switch-base {
+    min-width: $switch-width;
+    height: $switch-height;
+    overflow: hidden;
+    line-height: $switch-line-height;
+
+    .mot-switch-button {
+      width: $switch-inside-width;
+      height: $switch-inside-height;
+      transform: $switch-inside-close-transform;
+    }
+
+    &.mot-switch-open {
+      .mot-switch-button {
+        transform: $switch-inside-open-transform;
+      }
+    }
+  }
+}

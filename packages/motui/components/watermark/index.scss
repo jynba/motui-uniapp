@@ -1,0 +1,11 @@
+.mot-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: $watermark-z-index;
+  pointer-events: none;
+  background-repeat: repeat;
+
+  &-full-page {
+    position: fixed;
+  }
+}
