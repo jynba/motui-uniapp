@@ -1,18 +1,10 @@
 <script lang="ts" setup>
-import defaulttheme from 'vitepress/theme'
-import { computed, onMounted, watch }
+import DefaultTheme from 'vitepress/theme'
+import { computed, onMounted, watch } from 'vue'
+import { useData, useRouter } from 'vitepress'
 
-  from 'vue'
-import { useData }
-
-  from 'vitepress'
-
-const { Layout }
-
- = defaulttheme
-const { route, go }
-
- = userouter()
+const { Layout } = DefaultTheme
+const { route, go } = useRouter()
 const { isDark } = useData()
 const isComponentPage = computed(() => route.path.startsWith('/components'))
 
@@ -101,9 +93,9 @@ onMounted(() => {
   <Layout id="docs" :class="[{ 'xl:[&>.VPContent]:!pr-100': isComponentPage }]" />
   <div
     v-if="isComponentPage"
-    class="fixed bottom-0  top-80px flex right-0 flex transition-all scrollbar-width-0 rounded-l-xl xl:w-375px w-0 xl:right-10"
+    class="fixed bottom-0 top-[80px] flex right-0 flex transition-all scrollbar-width-0 rounded-l-xl xl:w-[375px] w-0 xl:right-10"
   >
-    <iframe class="border-none rounded-xl transition-all scrollbar-width-0 block w-375px h-675px" :src="iframeUrl" />
+    <iframe class="border-none rounded-xl transition-all scrollbar-width-0 block w-[375px] h-[675px]" :src="iframeUrl" />
   </div>
 </template>
 

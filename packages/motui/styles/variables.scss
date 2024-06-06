@@ -1,19 +1,23 @@
 // color
 
 // 主色调
-$primary-color: var(--mot-primary-color, #fa2c19) !default;color$primary-color
+$primary-color: var(--mot-primary-color, #fa2c19) !default;
 $primary-color-end: var(--mot-primary-color-end, #fa6419) !default;
 
 // 辅助色
-$help-color: var(--mot-help-color, #f5f5f5) !default;$help-color
+$help-color: var(--mot-help-color, #f5f5f5) !default;
+
 // 标题常规文字
-$title-color: var(--mot-title-color, #1a1a1a) !default;$title-color
+$title-color: var(--mot-title-color, #1a1a1a) !default;
+
 // 副标题
-$title-color2: var(--mot-title-color2, #666) !default;$title-color2
+$title-color2: var(--mot-title-color2, #666) !default;
+
 // 次内容
-$text-color: var(--mot-text-color, #808080) !default;$text-color
+$text-color: var(--mot-text-color, #808080) !default;
+
 // 特殊禁用色
-$disable-color: var(--mot-disable-color, #ccc) !default;$disable-color
+$disable-color: var(--mot-disable-color, #ccc) !default;
 $white: var(--mot-white, #fff) !default;
 $black: var(--mot-black, #000) !default;
 $required-color: var(--mot-required-color, #fa2c19) !default;
@@ -42,11 +46,11 @@ $font-family: var(
 ) !default;
 
 // ---- Animation ----
-$animation-duration: var(--mot-animation-duration, 0.25s) !default;Animation$animation-duration
+$animation-duration: var(--mot-animation-duration, 0.25s) !default;
 $animation-timing-fun: var(--mot-animation-timing-fun, cubic-bezier(0.55, 0.085, 0.68, 0.53)) !default;
 
 // Font
-$font-size-0: var(--mot-font-size-0, 10px) !default;Font$font-size-0
+$font-size-0: var(--mot-font-size-0, 10px) !default;
 $font-size-1: var(--mot-font-size-1, 12px) !default;
 $font-size-2: var(--mot-font-size-2, 14px) !default;
 $font-size-3: var(--mot-font-size-3, 16px) !default;
@@ -58,7 +62,7 @@ $font-size-large: var(--mot-font-size-large, $font-size-3) !default;
 $line-height-base: var(--mot-line-height-base, 1.5) !default;
 
 // button
-$button-border-radius: var(--mot-button-border-radius, 25px) !default;button$button-border-radius
+$button-border-radius: var(--mot-button-border-radius, 25px) !default;
 $button-border-width: var(--mot-button-border-width, 1px) !default;
 $button-default-bg-color: var(--mot-button-default-bg-color, $white) !default;
 $button-default-border-color: var(--mot-button-default-border-color, rgb(204 204 204 / 100%)) !default;
@@ -125,7 +129,7 @@ $button-small-round-border-radius: var(--mot-button-small-round-border-radius, $
 
 // cell
 
-$cell-color: var(--mot-cell-color, $title-color2) !default;cell$cell-color
+$cell-color: var(--mot-cell-color, $title-color2) !default;
 $cell-title-font: var(--mot-cell-title-font, $font-size-2) !default;
 $cell-title-desc-font: var(--mot-cell-title-desc-font, $font-size-1) !default;
 $cell-desc-font: var(--mot-cell-desc-font, $font-size-2) !default;
@@ -144,7 +148,7 @@ $cell-box-shadow: var(--mot-cell-box-shadow, 0 1px 7px 0 rgb(237 238 241 / 100%)
 
 // cell-group
 
-$cell-group-title-padding: var(--mot-cell-group-title-padding, 0 10px) !default;cell-group$cell-group-title-padding
+$cell-group-title-padding: var(--mot-cell-group-title-padding, 0 10px) !default;
 $cell-group-title-color: var(--mot-cell-group-title-color, #909ca4) !default;
 $cell-group-title-font-size: var(--mot-cell-group-title-font-size, $font-size-2) !default;
 $cell-group-title-line-height: var(--mot-cell-group-title-line-height, 20px) !default;
@@ -156,7 +160,7 @@ $cell-group-background-color: var(--mot-cell-group-background-color, $white) !de
 
 // divider
 
-$divider-margin: var(--mot-divider-margin, 16px 0) !default;divider$divider-margin
+$divider-margin: var(--mot-divider-margin, 16px 0) !default;
 $divider-text-font-size: var(--mot-divider-text-font-size, $font-size-2) !default;
 $divider-text-color: var(--mot-divider-text-color, #909ca4) !default;
 $divider-line-height: var(--mot-divider-line-height, 2px) !default;
@@ -169,18 +173,18 @@ $divider-vertical-margin: var(--mot-divider-vertical-margin, 0 8px) !default;
 
 // icon
 
-$icon-height: var(--mot-icon-height, 20px) !default;icon$icon-height
+$icon-height: var(--mot-icon-height, 20px) !default;
 $icon-width: var(--mot-icon-width, 20px) !default;
 $icon-line-height: var(--mot-icon-line-height, 20px) !default;
 
 // uploader
 
-$uploader-picture-width: var(--mot-uploader-picture-width, 100px) !default;uploader$uploader-picture-width
+$uploader-picture-width: var(--mot-uploader-picture-width, 100px) !default;
 $uploader-picture-height: var(--mot-uploader-picture-height, 100px) !default;
 $uploader-background: var(--mot-uploader-background, #f7f8fa) !default;
 
 // picker
-$picker-cancel-color: var(--mot-picker-cancel-color, #808080) !default;picker$picker-cancel-color
+$picker-cancel-color: var(--mot-picker-cancel-color, #808080) !default;
 $picker-ok-color: var(--mot-picker-ok-color, $primary-color) !default;
 $picker-bar-cancel-font-size: var(--mot-picker-bar-cancel-font-size, 14px) !default;
 $picker-bar-ok-font-size: var(--mot-picker-bar-ok-font-size, 14px) !default;
@@ -194,7 +198,7 @@ $picker-item-text-font-size: var(--mot-picker-item-text-font-size, 14px) !defaul
 $picker-item-active-line-border: var(--mot-picker-item-active-line-border, 1px solid #eae7e7) !default;
 
 // input
-$input-padding: var(--mot-input-padding, 10px 25px) !default;input$input-padding
+$input-padding: var(--mot-input-padding, 10px 25px) !default;
 $input-font-size: var(--mot-input-font-size, $font-size-2) !default;
 $input-line-height: var(--mot-input-line-height, 20px) !default;
 $input-border-bottom: var(--mot-input-border-bottom, #eaf0fb) !default;
@@ -205,15 +209,16 @@ $input-limit-color: var(--mot-input-limit-color, #808080) !default;
 
 // textarea
 
-$textarea-font: var(--mot-textarea-font, $font-size-2) !default;textarea$textarea-font
-// $textarea-height: var(--mot-textarea-height, 100px) !default;$textarea-height
+$textarea-font: var(--mot-textarea-font, $font-size-2) !default;
+
+// $textarea-height: var(--mot-textarea-height, 100px) !default;
 $textarea-limit-color: var(--mot-textarea-limit-color, $text-color) !default;
 $textarea-text-color: var(--mot-textarea-text-color, $title-color) !default;
 $textarea-disabled-color: var(--mot-textarea-disabled-color, $disable-color) !default;
 
 // inputnumber
 
-$inputnumber-icon-color: var(--mot-inputnumber-icon-color, $title-color) !default;inputnumber$inputnumber-icon-color
+$inputnumber-icon-color: var(--mot-inputnumber-icon-color, $title-color) !default;
 $inputnumber-icon-void-color: var(--mot-inputnumber-icon-void-color, $disable-color) !default;
 $inputnumber-icon-size: var(--mot-inputnumber-icon-size, 20px) !default;
 $inputnumber-input-font-size: var(--mot-inputnumber-input-font-size, 12px) !default;
@@ -231,7 +236,7 @@ $inputnumber-border-box: var(--mot-inputnumber-border-box, content-box) !default
 $inputnumber-display: var(--mot-inputnumber-display, inline-flex) !default;
 
 // actionsheet
-$actionsheet-light-color: var(--mot-actionsheet-light-color, #f6f6f6) !default;actionsheet$actionsheet-light-color
+$actionsheet-light-color: var(--mot-actionsheet-light-color, #f6f6f6) !default;
 $actionsheet-item-border-bottom: var(--mot-actionsheet-item-border-bottom, none) !default;
 $actionsheet-item-font-size: var(--mot-actionsheet-item-font-size, $font-size-2) !default;
 $actionsheet-item-subdesc-font-size: var(--mot-actionsheet-item-subdesc-font-size, $font-size-1) !default;
@@ -243,13 +248,13 @@ $actionsheet-item-line-height: var(--mot-actionsheet-item-line-height, 24px) !de
 $actionsheet-item-font-color: var(--mot-actionsheet-item-font-color, $title-color) !default;
 
 // shortpassword
-$shortpassword-background-color: var(--mot-shortpassword-background-color, rgb(245 245 245 / 100%)) !default;shortpassword$shortpassword-background-color
+$shortpassword-background-color: var(--mot-shortpassword-background-color, rgb(245 245 245 / 100%)) !default;
 $shortpassword-border-color: var(--mot-shortpassword-border-color, #ddd) !default;
 $shortpassword-error: var(--mot-shortpassword-error, $primary-color) !default;
 $shortpassword-forget: var(--mot-shortpassword-forget, rgb(128 128 128 / 100%)) !default;
 
 // numberkeyboard
-$numberkeyboard-width: var(--mot-numberkeyboard-width, 100%) !default;numberkeyboard$numberkeyboard-width
+$numberkeyboard-width: var(--mot-numberkeyboard-width, 100%) !default;
 $numberkeyboard-padding: var(--mot-numberkeyboard-padding, 0 0 22px 0) !default;
 $numberkeyboard-background-color: var(--mot-numberkeyboard-background-color, #f2f3f5) !default;
 $numberkeyboard-header-height: var(--mot-numberkeyboard-header-height, 34px) !default;
@@ -276,27 +281,27 @@ $numberkeyboard-key-finish-background-color: var(--mot-numberkeyboard-key-finish
 $numberkeyboard-key-activefinsh-background-color: var(--mot-numberkeyboard-key-activefinsh-background-color,#0570db) !default;
 
 // countdown
-$countdown-display: var(--mot-countdown-display, flex) !default;countdown$countdown-display
+$countdown-display: var(--mot-countdown-display, flex) !default;
 $countdown-color: var(--mot-countdown-color, inherit) !default;
 $countdown-font-size: var(--mot-countdown-font-size, initial) !default;
 
 //  large price
-$price-symbol-big-size: var(--mot-price-symbol-big-size, 18px) !default;largeprice$price-symbol-big-size
+$price-symbol-big-size: var(--mot-price-symbol-big-size, 18px) !default;
 $price-big-size: var(--mot-price-big-size, 24px) !default;
 $price-decimal-big-size: var(--mot-price-decimal-big-size, 18px) !default;
 
 //  normal price
-$price-symbol-medium-size: var(--mot-price-symbol-medium-size, 14px) !default;normalprice$price-symbol-medium-size
+$price-symbol-medium-size: var(--mot-price-symbol-medium-size, 14px) !default;
 $price-medium-size: var(--mot-price-medium-size, 16px) !default;
 $price-decimal-medium-size: var(--mot-price-decimal-medium-size, 14px) !default;
 
 // small price
-$price-symbol-small-size: var(--mot-price-symbol-small-size, 10px) !default;smallprice$price-symbol-small-size
+$price-symbol-small-size: var(--mot-price-symbol-small-size, 10px) !default;
 $price-small-size: var(--mot-price-small-size, 12px) !default;
 $price-decimal-small-size: var(--mot-price-decimal-small-size, 10px) !default;
 
 //  avatar
-$avatar-square: var(--mot-avatar-square, 5px) !default;avatar$avatar-square
+$avatar-square: var(--mot-avatar-square, 5px) !default;
 $avatar-large-width: var(--mot-avatar-large-width, 60px) !default;
 $avatar-large-height: var(--mot-avatar-large-height, 60px) !default;
 $avatar-small-width: var(--mot-avatar-small-width, 32px) !default;
@@ -305,7 +310,7 @@ $avatar-normal-width: var(--mot-avatar-normal-width, 40px) !default;
 $avatar-normal-height: var(--mot-avatar-normal-height, 40px) !default;
 
 //  switch
-$switch-close-bg-color: var(--mot-switch-close-bg-color, #ebebeb) !default;switch$switch-close-bg-color
+$switch-close-bg-color: var(--mot-switch-close-bg-color, #ebebeb) !default;
 $switch-close-cline-bg-color: var(--mot-switch-close-cline-bg-color, #f0f0f0) !default;
 $switch-width: var(--mot-switch-width, 36px) !default;
 $switch-height: var(--mot-switch-height, 21px) !default;
@@ -317,16 +322,17 @@ $switch-inside-open-transform: var(--mot-switch-inside-open-transform, translate
 $switch-inside-close-transform: var(--mot-switch-inside-close-transform, translateX(30%)) !default;
 
 // toast
-$toast-font-color: var(--mot-toast-font-color, $white) !default;toast$toast-font-color
+$toast-font-color: var(--mot-toast-font-color, $white) !default;
 $toast-inner-padding: var(--mot-toast-inner-padding, 24px 30px) !default;
 $toast-inner-bg-color: var(--mot-toast-inner-bg-color, rgb(0 0 0 / 80%)) !default;
 $toast-inner-border-radius: var(--mot-toast-inner-border-radius, 12px) !default;
 $toast-cover-bg-color: var(--mot-toast-cover-bg-color, rgb(0 0 0 / 0%)) !default;
 
 //  backtop
-$backtop-border-color: var(--mot-backtop-border-color, #e0e0e0) !default;backtop$backtop-border-color
+$backtop-border-color: var(--mot-backtop-border-color, #e0e0e0) !default;
+
 // calendar
-$calendar-primary-color: var(--mot-calendar-primary-color, $primary-color) !default;calendar$calendar-primary-color
+$calendar-primary-color: var(--mot-calendar-primary-color, $primary-color) !default;
 $calendar-choose-color: var(--mot-calendar-choose-color, $primary-color) !default;
 $calendar-choose-font-color: var(--mot-calendar-choose-font-color, $primary-color) !default;
 $calendar-base-color: var(--mot-calendar-base-color, #333) !default;
@@ -343,13 +349,14 @@ $calendar-day67-font-color: var(--mot-calendar-day67-font-color, $primary-color)
 $calendar-month-title-font-size: var(--mot-calendar-month-title-font-size, inherit) !default;
 
 //  overlay
-$overlay-bg-color: var(--mot-overlay-bg-color, rgb(0 0 0 / 70%)) !default;overlay$overlay-bg-color
+$overlay-bg-color: var(--mot-overlay-bg-color, rgb(0 0 0 / 70%)) !default;
+
 //  popup
-$popup-close-icon-margin: var(--mot-popup-close-icon-margin, 16px) !default;popup$popup-close-icon-margin
+$popup-close-icon-margin: var(--mot-popup-close-icon-margin, 16px) !default;
 $popup-border-radius: var(--mot-popup-border-radius, 20px) !default;
 
 // Notify
-$notify-text-color: var(--mot-notify-text-color, $white) !default;Notify$notify-text-color
+$notify-text-color: var(--mot-notify-text-color, $white) !default;
 $notify-padding: var(--mot-notify-padding, 12px 0) !default;
 $notify-font-size: var(--mot-notify-font-size, 14px) !default;
 $notify-height: var(--mot-notify-height, 44px) !default;
@@ -379,11 +386,11 @@ $notify-warning-background-color: var(
 ) !default;
 
 // rate
-$rate-icon-color: var(--mot-rate-icon-color, $primary-color) !default;rate$rate-icon-color
+$rate-icon-color: var(--mot-rate-icon-color, $primary-color) !default;
 $rate-icon-void-color: var(--mot-rate-icon-void-color, $disable-color) !default;
 
 // tabbar
-$tabbar-active-color: var(--mot-tabbar-active-color, $primary-color) !default;tabbar$tabbar-active-color
+$tabbar-active-color: var(--mot-tabbar-active-color, $primary-color) !default;
 $tabbar-unactive-color: var(--mot-tabbar-unactive-color, $primary-color) !default;
 $tabbar-border-top: var(--mot-tabbar-border-top, 1px solid #eee) !default;
 $tabbar-border-bottom: var(--mot-tabbar-border-bottom, 1px solid #eee) !default;
@@ -394,9 +401,10 @@ $tabbar-height: var(--mot-tabbar-height, 50px) !default;
 $tabbar-word-margin-top: var(--mot-tabbar-word-margin-top, auto) !default;
 
 //  infiniteloading
-$infiniteloading-bottom-color: var(--mot-infiniteloading-bottom-color, #c8c8c8) !default;infiniteloading$infiniteloading-bottom-color
+$infiniteloading-bottom-color: var(--mot-infiniteloading-bottom-color, #c8c8c8) !default;
+
 //  range
-$range-tip-font-color: var(--mot-range-tip-font-color, #333) !default;range$range-tip-font-color
+$range-tip-font-color: var(--mot-range-tip-font-color, #333) !default;
 $range-bg-color: var(--mot-range-bg-color, $primary-color) !default;
 $range-bg-color-tick: var(--mot-range-bg-color-tick, #fa958c) !default;
 $range-bar-bg-color: var(
@@ -409,7 +417,7 @@ $range-bar-btn-height: var(--mot-range-bar-btn-height, 24px) !default;
 $range-bar-btn-border: var(--mot-range-bar-btn-border, 1px solid $primary-color) !default;
 
 //  swiper
-$swiper-pagination-item-width: var(--mot-swiper-pagination-item-width, 8px) !default;swiper$swiper-pagination-item-width
+$swiper-pagination-item-width: var(--mot-swiper-pagination-item-width, 8px) !default;
 $swiper-pagination-item-height: var(--mot-swiper-pagination-item-height, 3px) !default;
 $swiper-pagination-item-margin-right: var(--mot-swiper-pagination-item-margin-right, 7px) !default;
 $swiper-pagination-item-border-radius: var(--mot-swiper-pagination-item-border-radius, 2px) !default;
@@ -418,7 +426,7 @@ $swiper-pagination-item-border-radius: var(--mot-swiper-pagination-item-border-r
 $address-region-tab-line: var(
   --mot-address-region-tab-line,
   linear-gradient(90deg, $primary-color 0%, rgba(#fa2c19, 0.15) 100%)
-) !default;address$address-region-tab-line
+) !default;
 $address-icon-color: var(--mot-address-icon-color, $primary-color) !default;
 $address-header-title-font-size: var(--mot-address-header-title-font-size, 18px) !default;
 $address-header-title-color: var(--mot-address-header-title-color, #262626) !default;
@@ -432,7 +440,7 @@ $address-region-item-font-size: var(--mot-address-region-item-font-size, $font-s
 $address-item-margin-right: var(--mot-address-item-margin-right, 9px) !default;
 
 //  steps
-$steps-base-icon-width: var(--mot-steps-base-icon-width, 25px) !default;steps$steps-base-icon-width
+$steps-base-icon-width: var(--mot-steps-base-icon-width, 25px) !default;
 $steps-base-icon-height: var(--mot-steps-base-icon-height, 25px) !default;
 $steps-base-icon-line-height: var(--mot-steps-base-icon-line-height, 25px) !default;
 $steps-base-icon-font-size: var(--mot-steps-base-icon-font-size, 13px) !default;
@@ -459,13 +467,13 @@ $steps-process-title-color: var(--mot-steps-process-title-color, $primary-color)
 $steps-process-icon-text-color: var(--mot-steps-process-icon-text-color, $primary-color) !default;
 
 // dialog
-$dialog-width: var(--mot-dialog-width, 296px) !default;dialog$dialog-width
+$dialog-width: var(--mot-dialog-width, 296px) !default;
 $dialog-header-font-weight: var(--mot-dialog-header-font-weight, normal) !default;
 $dialog-header-color: var(--mot-dialog-header-color, rgb(38 38 38 / 100%)) !default;
 $dialog-footer-justify-content: var(--mot-dialog-footer-justify-content, space-around) !default;
 
 // checkbox
-$checkbox-label-color: var(--mot-checkbox-label-color, #1d1e1e) !default;checkbox$checkbox-label-color
+$checkbox-label-color: var(--mot-checkbox-label-color, #1d1e1e) !default;
 $checkbox-label-disable-color: var(--mot-checkbox-label-disable-color, #999) !default;
 $checkbox-icon-disable-color: var(--mot-checkbox-icon-disable-color, #d6d6d6) !default;
 $checkbox-label-margin-left: var(--mot-checkbox-label-margin-left, 15px) !default;
@@ -484,7 +492,7 @@ $checkbox-display: var(--mot-checkbox-display, inline-flex) !default;
 $checkbox-margin-right: var(--mot-checkbox-margin-right, 20px) !default;
 
 //  radio
-$radio-label-font-color: var(--mot-radio-label-font-color, #1d1e1e) !default;radio$radio-label-font-color
+$radio-label-font-color: var(--mot-radio-label-font-color, #1d1e1e) !default;
 $radio-label-font-active-color: var(--mot-radio-label-font-active-color, $primary-color) !default;
 $radio-label-disable-color: var(--mot-radio-label-disable-color, #999) !default;
 $radio-icon-disable-color: var(--mot-radio-icon-disable-color, #d6d6d6) !default;
@@ -499,7 +507,7 @@ $radio-icon-font-size: var(--mot-radio-icon-font-size, 18px) !default;
 $radio-icon-disable-color2: var(--mot-radio-icon-disable-color2, $help-color) !default;
 
 //  fixednav
-$fixednav-bg-color: var(--mot-fixednav-bg-color, $white) !default;fixednav$fixednav-bg-color
+$fixednav-bg-color: var(--mot-fixednav-bg-color, $white) !default;
 $fixednav-font-color: var(--mot-fixednav-font-color, $black) !default;
 $fixednav-index: var(--mot-fixednav-index, 201) !default;
 $fixednav-btn-bg: var(
@@ -509,7 +517,7 @@ $fixednav-btn-bg: var(
 $fixednav-item-active-color: var(--mot-fixednav-item-active-color, $primary-color) !default;
 
 // NoticeBar
-$noticebar-background: var(--mot-noticebar-background, rgb(251 248 220 / 100%)) !default;NoticeBar$noticebar-background
+$noticebar-background: var(--mot-noticebar-background, rgb(251 248 220 / 100%)) !default;
 $noticebar-color: var(--mot-noticebar-color, #d9500b) !default;
 $noticebar-font-size: var(--mot-noticebar-font-size, 14px) !default;
 $noticebar-across-height: var(--mot-noticebar-across-height, 40px) !default;
@@ -520,7 +528,7 @@ $noticebar-lefticon-margin: var(--mot-noticebar-lefticon-margin, 0 10px) !defaul
 $noticebar-righticon-margin: var(--mot-noticebar-righticon-margin, 0 10px) !default;
 
 // TimeSelect
-$timeselect-title-font-size: var(--mot-timeselect-title-font-size, $font-size-2) !default;TimeSelect$timeselect-title-font-size
+$timeselect-title-font-size: var(--mot-timeselect-title-font-size, $font-size-2) !default;
 $timeselect-title-color: var(--mot-timeselect-title-color, $title-color) !default;
 $timeselect-title-width: var(--mot-timeselect-title-width, 100%) !default;
 $timeselect-title-height: var(--mot-timeselect-title-height, 50px) !default;
@@ -528,7 +536,7 @@ $timeselect-title-line-height: var(--mot-timeselect-title-line-height, 50px) !de
 $timeselect-pannel-bg-color: var(--mot-timeselect-pannel-bg-color, #f6f7f9) !default;
 
 // TimePannel
-$timeselect-timepannel-text-color: var(--mot-timeselect-timepannel-text-color, $title-color2) !default;TimePannel$timeselect-timepannel-text-color
+$timeselect-timepannel-text-color: var(--mot-timeselect-timepannel-text-color, $title-color2) !default;
 $timeselect-timepannel-font-size: var(--mot-timeselect-timepannel-font-size, $font-size-2) !default;
 $timeselect-timepannel-cur-bg-color: var(--mot-timeselect-timepannel-cur-bg-color, $white) !default;
 $timeselect-timepannel-cur-text-color: var(--mot-timeselect-timepannel-cur-text-color, #333) !default;
@@ -537,7 +545,7 @@ $timeselect-timepannel-height: var(--mot-timeselect-timepannel-height, 40px) !de
 $timeselect-timepannel-padding: var(--mot-timeselect-timepannel-padding, 15px) !default;
 
 // TimeDetail
-$timeselect-timedetail-padding: var(--mot-timeselect-timedetail-padding, 0 5px 50px 13px) !default;TimeDetail$timeselect-timedetail-padding
+$timeselect-timedetail-padding: var(--mot-timeselect-timedetail-padding, 0 5px 50px 13px) !default;
 $timeselect-timedetail-item-width: var(--mot-timeselect-timedetail-item-width, 100px) !default;
 $timeselect-timedetail-item-height: var(--mot-timeselect-timedetail-item-height, 50px) !default;
 $timeselect-timedetail-item-line-height: var(--mot-timeselect-timedetail-item-line-height, 50px) !default;
@@ -553,7 +561,7 @@ $timeselect-timedetail-item-cur-text-color: var(
 ) !default;
 
 //  tag
-$tag-height: var(--mot-tag-height, auto) !default;tag$tag-height
+$tag-height: var(--mot-tag-height, auto) !default;
 $tag-padding: var(--mot-tag-padding, 0 4px) !default;
 $tag-font-size: var(--mot-tag-font-size, 12px) !default;
 $tag-default-color: var(--mot-tag-default-color, #fff) !default;
@@ -574,7 +582,7 @@ $tag-disabled-close-color: var(--mot-tag-disabled-close-color, #aaa) !default;
 $badge-background-color: var(
   --mot-badge-background-color,
   linear-gradient(135deg, $primary-color 0%, $primary-color-end 100%)
-) !default;badge$badge-background-color
+) !default;
 $badge-color: var(--mot-badge-color, #fff) !default;
 $badge-font-size: var(--mot-badge-font-size, $font-size-1) !default;
 $badge-border-radius: var(--mot-badge-border-radius, 14px) !default;
@@ -588,14 +596,14 @@ $badge-dot-border-radius: var(--mot-badge-dot-border-radius, 7px) !default;
 $badge-dot-padding: var(--mot-badge-dot-padding, 0) !default;
 
 //  popover
-// $popover-white-background-color: var(--mot-/ $popover-white-background-color, rgb(255 255 255 / 100%) )!default;popover$popover-white-background-color
-// $popover-dark-background-color: var(--mot-/ $popover-dark-background-color, rgb(75 76 77 / 100%) )!default;$popover-dark-background-color
-// $popover-border-bottom-color: var(--mot-/ $popover-border-bottom-color, rgb(229 229 229 / 100%) )!default;$popover-border-bottom-color
-// $popover-primary-text-color: var(--mot-/ $popover-primary-text-color, rgb(51 51 51 / 100%) )!default;$popover-primary-text-color
-// $popover-disable-color: var(--mot-/ $popover-disable-color, rgb(154 155 157 / 100%) )!default;$popover-disable-color
-// $popover-menu-item-padding: var(--mot-/ $popover-menu-item-padding, 8px 0 )!default;$popover-menu-item-padding
-// $popover-menu-item-margin: var(--mot-/ $popover-menu-item-margin, 0 8px )!default;$popover-menu-item-margin
-// $popover-menu-name-line-height: var(--mot-/ $popover-menu-name-line-height, normal )!default;$popover-menu-name-line-height
+// $popover-white-background-color: var(--mot-/ $popover-white-background-color, rgba(255, 255, 255, 1) )!default;
+// $popover-dark-background-color: var(--mot-/ $popover-dark-background-color, rgba(75, 76, 77, 1) )!default;
+// $popover-border-bottom-color: var(--mot-/ $popover-border-bottom-color, rgba(229, 229, 229, 1) )!default;
+// $popover-primary-text-color: var(--mot-/ $popover-primary-text-color, rgba(51, 51, 51, 1) )!default;
+// $popover-disable-color: var(--mot-/ $popover-disable-color, rgba(154, 155, 157, 1) )!default;
+// $popover-menu-item-padding: var(--mot-/ $popover-menu-item-padding, 8px 0 )!default;
+// $popover-menu-item-margin: var(--mot-/ $popover-menu-item-margin, 0 8px )!default;
+// $popover-menu-name-line-height: var(--mot-/ $popover-menu-name-line-height, normal )!default;
 
 $popover-white-background-color: var(--mot-popover-white-background-color, rgb(255 255 255 / 100%)) !default;
 $popover-dark-background-color: var(--mot-popover-dark-background-color, rgb(75 76 77 / 100%)) !default;
@@ -610,7 +618,7 @@ $popover-menu-name-line-height: var(--mot-popover-menu-name-line-height, normal)
 $progress-inner-background-color: var(
   --mot-progress-inner-background-color,
   linear-gradient(135deg, $primary-color 0%, $primary-color-end 100%)
-) !default;progress$progress-inner-background-color
+) !default;
 $progress-insidetext-background: var(--mot-progress-insidetext-background, $progress-inner-background-color) !default;
 $progress-outer-background-color: var(--mot-progress-outer-background-color, #f3f3f3) !default;
 $progress-outer-border-radius: var(--mot-progress-outer-border-radius, 12px) !default;
@@ -634,7 +642,7 @@ $progress-large-text-padding: var(--mot-progress-large-text-padding, $progress-i
 $progress-large-text-top: var(--mot-progress-large-text-top, $progress-insidetext-top) !default;
 
 //  pagination
-$pagination-color: var(--mot-pagination-color, $primary-color) !default;pagination$pagination-color
+$pagination-color: var(--mot-pagination-color, $primary-color) !default;
 $pagination-font-size: var(--mot-pagination-font-size, $font-size-2) !default;
 $pagination-item-border-color: var(--mot-pagination-item-border-color, #e4e7eb) !default;
 $pagination-active-background-color: var(
@@ -648,7 +656,7 @@ $pagination-item-border-radius: var(--mot-pagination-item-border-radius, 2px) !d
 $pagination-prev-next-padding: var(--mot-pagination-prev-next-padding, 0 11px) !default;
 
 // tabs
-$tabs-tab-smile-color: var(--mot-tabs-tab-smile-color, $primary-color) !default;tabs$tabs-tab-smile-color
+$tabs-tab-smile-color: var(--mot-tabs-tab-smile-color, $primary-color) !default;
 $tabs-titles-border-radius: var(--mot-tabs-titles-border-radius, 0) !default;
 $tabs-titles-item-large-font-size: var(--mot-tabs-titles-item-large-font-size, $font-size-3) !default;
 $tabs-titles-item-font-size: var(--mot-tabs-titles-item-font-size, $font-size-2) !default;
@@ -676,7 +684,7 @@ $tab-pane-padding: var(--mot-tab-pane-padding, 24px 20px) !default;
 $tab-pane-background: var(--mot-tab-pane-background, $white) !default;
 
 // indicator
-$indicator-bg-color: var(--mot-indicator-bg-color, $primary-color) !default;indicator$indicator-bg-color
+$indicator-bg-color: var(--mot-indicator-bg-color, $primary-color) !default;
 $indicator-dot-color: var(--mot-indicator-dot-color, $disable-color) !default;
 $indicator-color: var(--mot-indicator-color, $white) !default;
 $indicator-size: var(--mot-indicator-size, 18px) !default;
@@ -685,7 +693,7 @@ $indicator-border-size: var(--mot-indicator-border-size, $indicator-size + 2) !d
 $indicator-number-font-size: var(--mot-indicator-number-font-size, 10px) !default;
 
 // menu
-$menu-bar-line-height: var(--mot-menu-bar-line-height, 48px) !default;menu$menu-bar-line-height
+$menu-bar-line-height: var(--mot-menu-bar-line-height, 48px) !default;
 $menu-item-font-size: var(--mot-menu-item-font-size, $font-size-2) !default;
 $menu-item-text-color: var(--mot-menu-item-text-color, $title-color) !default;
 $menu-item-active-text-color: var(--mot-menu-item-active-text-color, $primary-color) !default;
@@ -705,7 +713,7 @@ $menu-scroll-fixed-z-index: var(--mot-menu-scroll-fixed-z-index, 1000) !default;
 $menu-active-item-font-weight: var(--mot-menu-active-item-font-weight, 500) !default;
 
 // collapse
-$collapse-item-padding: var(--mot-collapse-item-padding, 13px 36px 13px 26px) !default;collapse$collapse-item-padding
+$collapse-item-padding: var(--mot-collapse-item-padding, 13px 36px 13px 26px) !default;
 $collapse-item-color: var(--mot-collapse-item-color, #666) !default;
 $collapse-item-disabled-color: var(--mot-collapse-item-disabled-color, #c8c9cc) !default;
 $collapse-item-icon-color: var(--mot-collapse-item-icon-color, #666) !default;
@@ -720,7 +728,7 @@ $collapse-wrapper-content-line-height: var(--mot-collapse-wrapper-content-line-h
 $collapse-wrapper-content-background-color: var(--mot-collapse-wrapper-content-background-color, $white) !default;
 
 // searchbar
-$searchbar-background: var(--mot-searchbar-background, $white) !default;searchbar$searchbar-background
+$searchbar-background: var(--mot-searchbar-background, $white) !default;
 $searchbar-right-out-color: var(--mot-searchbar-right-out-color, $black) !default;
 $searchbar-padding: var(--mot-searchbar-padding, 9px 16px) !default;
 $searchbar-width: var(--mot-searchbar-width, 100%) !default;
@@ -733,7 +741,7 @@ $searchbar-input-bar-color: var(--mot-searchbar-input-bar-color, inherit) !defau
 $searchbar-input-bar-placeholder-color: var(--mot-searchbar-input-bar-placeholder-color, inherit) !default;
 
 // empty
-$empty-padding: var(--mot-empty-padding, 32px 0) !default;empty$empty-padding
+$empty-padding: var(--mot-empty-padding, 32px 0) !default;
 $empty-image-size: var(--mot-empty-image-size, 170px) !default;
 $empty-description-margin-top: var(--mot-empty-description-margin-top, 4px) !default;
 $empty-description-color: var(--mot-empty-description-color, #666) !default;
@@ -742,7 +750,7 @@ $empty-description-line-height: var(--mot-empty-description-line-height, 20px) !
 $empty-description-padding: var(--mot-empty-description-padding, 0 40px) !default;
 
 // cascader
-$cascader-font-size: var(--mot-cascader-font-size, $font-size-2) !default;cascader$cascader-font-size
+$cascader-font-size: var(--mot-cascader-font-size, $font-size-2) !default;
 $cascader-line-height: var(--mot-cascader-line-height, 22px) !default;
 $cascader-tabs-item-padding: var(--mot-cascader-tabs-item-padding, 0 10px) !default;
 $cascader-bar-padding: var(--mot-cascader-bar-padding, 24px 20px 17px) !default;
@@ -755,7 +763,7 @@ $cascader-item-font-size: var(--mot-cascader-item-font-size, $font-size-2) !defa
 $cascader-item-active-color: var(--mot-cascader-item-active-color, $primary-color) !default;
 
 // form
-$form-item-error-line-color: var(--mot-form-item-error-line-color, $required-color) !default;form$form-item-error-line-color
+$form-item-error-line-color: var(--mot-form-item-error-line-color, $required-color) !default;
 $form-item-required-color: var(--mot-form-item-required-color, $required-color) !default;
 $form-item-error-message-color: var(--mot-form-item-error-message-color, $required-color) !default;
 $form-item-label-font-size: var(--mot-form-item-label-font-size, 14px) !default;
@@ -770,7 +778,7 @@ $form-item-tip-font-size: var(--mot-form-item-tip-font-size, 10px) !default;
 $form-item-tip-text-align: var(--mot-form-item-tip-text-align, left) !default;
 
 // skeleton
-$skeleton-content-avatar-background-color: var(--mot-skeleton-content-avatar-background-color, #efefef) !default;skeleton$skeleton-content-avatar-background-color
+$skeleton-content-avatar-background-color: var(--mot-skeleton-content-avatar-background-color, #efefef) !default;
 $skeleton-content-line-background-color: var(--mot-skeleton-content-line-background-color, #efefef) !default;
 $skeleton-animation-background-color: var(
   --mot-skeleton-animation-background-color,
@@ -778,7 +786,7 @@ $skeleton-animation-background-color: var(
 ) !default;
 
 // sku
-$sku-item-border: var(--mot-sku-item-border, 1px solid $primary-color) !default;sku$sku-item-border
+$sku-item-border: var(--mot-sku-item-border, 1px solid $primary-color) !default;
 $sku-item-disable-line: var(--mot-sku-item-disable-line, line-through) !default;
 $sku-opetate-bg-default: var(
   --mot-sku-opetate-bg-default,
@@ -811,7 +819,7 @@ $sku-product-img-height: var(--mot-sku-product-img-height, $sku-product-img-widt
 $sku-product-img-border-radius: var(--mot-sku-product-img-border-radius, 0) !default;
 
 // card
-$card-font-size-0: var(--mot-card-font-size-0, $font-size-0) !default;card$card-font-size-0
+$card-font-size-0: var(--mot-card-font-size-0, $font-size-0) !default;
 $card-font-size-1: var(--mot-card-font-size-1, $font-size-1) !default;
 $card-font-size-2: var(--mot-card-font-size-2, $font-size-2) !default;
 $card-font-size-3: var(--mot-card-font-size-3, $font-size-3) !default;
@@ -819,7 +827,7 @@ $card-left-border-radius: var(--mot-card-left-border-radius, 0) !default;
 $card-left-background-color: var(--mot-card-left-background-color, inherit) !default;
 
 // grid
-$grid-border-color: var(--mot-grid-border-color, #f5f6f7) !default;grid$grid-border-color
+$grid-border-color: var(--mot-grid-border-color, #f5f6f7) !default;
 $grid-item-content-padding: var(--mot-grid-item-content-padding, 16px 8px) !default;
 $grid-item-content-bg-color: var(--mot-grid-item-content-bg-color, $white) !default;
 $grid-item-text-margin: var(--mot-grid-item-text-margin, 8px) !default;
@@ -827,13 +835,13 @@ $grid-item-text-color: var(--mot-grid-item-text-color, $title-color2) !default;
 $grid-item-text-font-size: var(--mot-grid-item-text-font-size, $font-size-1) !default;
 
 // table
-$table-border-color: var(--mot-table-border-color, #ececec) !default;table$table-border-color
+$table-border-color: var(--mot-table-border-color, #ececec) !default;
 $table-cols-padding: var(--mot-table-cols-padding, 10px) !default;
 $table-tr-even-bg-color: var(--mot-table-tr-even-bg-color, #f3f3f3) !default;
 $table-tr-odd-bg-color: var(--mot-table-tr-odd-bg-color, $white) !default;
 
 // navbar
-$navbar-height: var(--mot-navbar-height, 44px) !default;navbar$navbar-height
+$navbar-height: var(--mot-navbar-height, 44px) !default;
 $navbar-margin-bottom: var(--mot-navbar-margin-bottom, 20px) !default;
 $navbar-padding: var(--mot-navbar-padding, 0 16px) !default;
 $navbar-background: var(--mot-navbar-background, $white) !default;
@@ -847,9 +855,10 @@ $navbar-title-width: var(--mot-navbar-title-width, 100px) !default;
 $navbar-title-icon-margin: var(--mot-navbar-title-icon-margin, 0 0 0 13px) !default;
 
 // sidenavbar
-$sidenavbar-content-bg-color: var(--mot-sidenavbar-content-bg-color, $white) !default;sidenavbar$sidenavbar-content-bg-color
+$sidenavbar-content-bg-color: var(--mot-sidenavbar-content-bg-color, $white) !default;
+
 // subsidenavbar
-$sidenavbar-sub-title-border-color: var(--mot-sidenavbar-sub-title-border-color, #f6f6f6) !default;subsidenavbar$sidenavbar-sub-title-border-color
+$sidenavbar-sub-title-border-color: var(--mot-sidenavbar-sub-title-border-color, #f6f6f6) !default;
 $sidenavbar-sub-title-bg-color: var(--mot-sidenavbar-sub-title-bg-color, #f6f6f6) !default;
 $sidenavbar-sub-title-font-size: var(--mot-sidenavbar-sub-title-font-size, $font-size-large) !default;
 $sidenavbar-sub-title-radius: var(--mot-sidenavbar-sub-title-radius, 0) !default;
@@ -860,14 +869,14 @@ $sidenavbar-sub-title-text-line-height: var(--mot-sidenavbar-sub-title-text-line
 $sidenavbar-sub-title-text-color: var(--mot-sidenavbar-sub-title-text-color, $title-color) !default;
 
 // sidenavbaritem
-$sidenavbar-item-title-color: var(--mot-sidenavbar-item-title-color, #333) !default;sidenavbaritem$sidenavbar-item-title-color
+$sidenavbar-item-title-color: var(--mot-sidenavbar-item-title-color, #333) !default;
 $sidenavbar-item-title-bg-color: var(--mot-sidenavbar-item-title-bg-color, $white) !default;
 $sidenavbar-item-height: var(--mot-sidenavbar-item-height, 40px) !default;
 $sidenavbar-item-line-height: var(--mot-sidenavbar-item-line-height, 40px) !default;
 $sidenavbar-item-font-size: var(--mot-sidenavbar-item-font-size, 16px) !default;
 
 // elevator
-$elevator-list-item-highcolor: var(--mot-elevator-list-item-highcolor, $primary-color) !default;elevator$elevator-list-item-highcolor
+$elevator-list-item-highcolor: var(--mot-elevator-list-item-highcolor, $primary-color) !default;
 $elevator-list-item-font-size: var(--mot-elevator-list-item-font-size, 12px) !default;
 $elevator-list-item-font-color: var(--mot-elevator-list-item-font-color, #333) !default;
 $elevator-list-item-name-padding: var(--mot-elevator-list-item-name-padding, 0 20px) !default;
@@ -919,11 +928,13 @@ $elevator-list-item-bars-inner-item-active-color: var(
 ) !default;
 
 // list
-$list-item-margin: var(--mot-list-item-margin, 0 0 10px 0) !default;list$list-item-margin
+$list-item-margin: var(--mot-list-item-margin, 0 0 10px 0) !default;
+
 //  Ecard
-$ecard-bg-color: var(--mot-ecard-bg-color, #f0f2f5) !default;Ecard$ecard-bg-color
+$ecard-bg-color: var(--mot-ecard-bg-color, #f0f2f5) !default;
+
 //  addresslist
-$addresslist-bg: var(--mot-addresslist-bg, #fff) !default;addresslist$addresslist-bg
+$addresslist-bg: var(--mot-addresslist-bg, #fff) !default;
 $addresslist-border: var(--mot-addresslist-border, #f0f0f0) !default;
 $addresslist-font-color: var(--mot-addresslist-font-color, #333) !default;
 $addresslist-font-size: var(--mot-addresslist-font-size, 16px) !default;
@@ -936,7 +947,7 @@ $addresslist-contnts-contact-default: var(--mot-addresslist-contnts-contact-defa
 $addresslist-contnts-contact-color: var(--mot-addresslist-contnts-contact-color, $white) !default;
 
 //  category
-$category-bg-color: var(--mot-category-bg-color, rgb(255 255 255 / 100%)) !default;category$category-bg-color
+$category-bg-color: var(--mot-category-bg-color, rgb(255 255 255 / 100%)) !default;
 $category-list-left-bg-color: var(--mot-category-list-left-bg-color, rgb(246 247 249 / 100%)) !default;
 $category-list-item-color: var(--mot-category-list-item-color, $title-color) !default;
 $category-list-item-checked-color: var(--mot-category-list-item-checked-color, rgb(255 255 255 / 100%)) !default;
@@ -946,30 +957,33 @@ $category-pane-border-color: var(--mot-category-pane-border-color, rgb(153 153 1
 $category-pane-title-color: var(--mot-category-pane-title-color, rgb(51 51 51 / 100%)) !default;
 
 // circleProgress
-$circleprogress-primary-color: var(--mot-circleprogress-primary-color, $primary-color) !default;circleProgress$circleprogress-primary-color
+$circleprogress-primary-color: var(--mot-circleprogress-primary-color, $primary-color) !default;
 $circleprogress-path-color: var(--mot-circleprogress-path-color, #e5e9f2) !default;
 $circleprogress-text-color: var(--mot-circleprogress-text-color, #000) !default;
 $circleprogress-text-size: var(--mot-circleprogress-text-size, $font-size-3) !default;
 
 // Comment
-$comment-header-user-name-color: var(--mot-comment-header-user-name-color, rgb(51 51 51 / 100%)) !default;Comment$comment-header-user-name-color
+$comment-header-user-name-color: var(--mot-comment-header-user-name-color, rgb(51 51 51 / 100%)) !default;
 $comment-header-time-color: var(--mot-comment-header-time-color, rgb(153 153 153 / 100%)) !default;
 $comment-bottom-label-color: var(--mot-comment-bottom-label-color, rgb(153 153 153 / 100%)) !default;
 $comment-shop-color: var(--mot-comment-shop-color, $primary-color) !default;
 
 // Ellipsis
-$ellipsis-expand-collapse-color: var(--mot-ellipsis-expand-collapse-color, #3460fa) !default;Ellipsis$ellipsis-expand-collapse-color
+$ellipsis-expand-collapse-color: var(--mot-ellipsis-expand-collapse-color, #3460fa) !default;
+
 // Watermark
-$watermark-z-index: var(--mot-watermark-z-index, 2000) !default;Watermark$watermark-z-index
+$watermark-z-index: var(--mot-watermark-z-index, 2000) !default;
+
 // invoice
-$invoice-padding: var(--mot-invoice-padding, 10px 10px 20px) !default;invoice$invoice-padding
+$invoice-padding: var(--mot-invoice-padding, 10px 10px 20px) !default;
+
 // TrendArrow
-$trendarrow-font-size: var(--mot-trendarrow-font-size, 14px) !default;TrendArrow$trendarrow-font-size
+$trendarrow-font-size: var(--mot-trendarrow-font-size, 14px) !default;
 $trendarrow-before-icon-margin: var(--mot-trendarrow-before-icon-margin, 4px) !default;
 
 
 // CodeInput
-$code-input-cursor-width: var(--mot-code-input-cursor-width, 1px) !default;CodeInput$code-input-cursor-width
+$code-input-cursor-width: var(--mot-code-input-cursor-width, 1px) !default;
 $code-input-cursor-height: var(--mot-code-input-cursor-height, 40%) !default;
 $code-input-cursor-animation-duration: 1s;
 $code-input-cursor-animation-name: mot-cursor-flicker;
@@ -977,8 +991,8 @@ $code-input-content-color: var(--mot-code-content-color, #606266) !default;;
 
 
 // LoadingPage
-$loadingpage-icon-margin-bottom: var(--mot-loadingpage-icon-margin-bottom, 10px) !default;LoadingPage$loadingpage-icon-margin-bottom
+$loadingpage-icon-margin-bottom: var(--mot-loadingpage-icon-margin-bottom, 10px) !default;
 
 
 
-@import url('./mixins/index');
+@import './mixins/index';
