@@ -1,7 +1,7 @@
 {
   "name": "motui-uniapp",
   "displayName": "motui-uniapp 轻量级移动端 Uniapp、Vue3 组件库",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "轻量级移动端 Uniapp、Vue3 组件库（支持小程序开发）",
   "author": "motui",
   "license": "MIT",
