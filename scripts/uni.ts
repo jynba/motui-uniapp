@@ -3,7 +3,7 @@ import consloa from 'consola'
 
 async function copy() {
   const sourceDir = 'packages/motui'
-  const destDir = 'example/uni_modules/nutui-uni'
+  const destDir = 'example/uni_modules/motui-uni'
 
   try {
     await Promise.all([
@@ -15,7 +15,7 @@ async function copy() {
     await fs.copyFile('CHANGELOG.md', `${destDir}/changelog.md`)
     await fs.copyFile('scripts/package.json', `${destDir}/package.json`)
     consloa.success('copy success !!!')
-    fs.createFileSync(`${destDir}/components/nutui-uni/nutui-uni.vue`)
+    fs.createFileSync(`${destDir}/components/motui-uni/motui-uni.vue`)
   }
   catch (error) {
     consloa.error('Copy failed:', error)

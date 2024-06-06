@@ -9,7 +9,7 @@
 ```html
 <template>
   <mot-noticebar
-      text="NutUI 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。"
+      text="MotUi 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。"
       :background="`rgba(251, 248, 220, 1)`"
       :custom-color="`#D9500B`"
     ></mot-noticebar>
@@ -26,7 +26,7 @@
   <mot-noticebar text="华为畅享9新品即将上市" :scrollable="true" :background="`rgba(251, 248, 220, 1)`" :custom-color="`#D9500B`"></mot-noticebar>
 
   <mot-noticebar
-      text="NutUI 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。"
+      text="MotUi 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。"
       :scrollable="false"
     ></mot-noticebar>
 </template>
@@ -38,14 +38,14 @@
 ```html
 <template>
   <mot-noticebar :closeMode="true" :background="`rgba(251, 248, 220, 1)`" :custom-color="`#D9500B`">
-    NutUI 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。
+    MotUi 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。
   </mot-noticebar>
  
   <mot-noticebar
       :closeMode="true"
       right-icon="circle-close"
       >
-      NutUI 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。
+      MotUi 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。
   </mot-noticebar>
 </template>
 
@@ -76,7 +76,7 @@
 ```html
 <template>
   <mot-noticebar
-      text="NutUI 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。"
+      text="MotUi 是移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。"
       wrapable
        ></mot-noticebar>
 </template>

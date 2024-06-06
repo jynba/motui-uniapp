@@ -75,7 +75,7 @@
           />
         </mot-avatar>
       <div class="right-content">
-        <div class="title">NutUI</div>
+        <div class="title">MotUi</div>
         <div class="desc"
             >一套轻量级移动端Vue组库，提供丰富的基础组件和业务组件，帮助开发者快速搭建移动应用。</div
         >
