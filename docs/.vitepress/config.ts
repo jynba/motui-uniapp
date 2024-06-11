@@ -73,5 +73,7 @@ export default defineConfig({
       dark: 'vitesse-dark',
     },
   },
+  // 去除末尾的html
+  cleanUrls: true,
   // pwa,
 })

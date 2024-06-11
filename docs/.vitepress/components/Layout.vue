@@ -2,6 +2,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { computed, onMounted, watch } from 'vue'
 import { useData, useRouter } from 'vitepress'
+import { sidebarComponents } from '../items'
 
 const { Layout } = DefaultTheme
 const { route, go } = useRouter()
@@ -9,11 +10,19 @@ const { isDark } = useData()
 const isComponentPage = computed(() => route.path.startsWith('/components'))
 
 const iframeUrl = computed(() => {
-  const path = route.path.replace('/components', '').split('.')[0]
+  const path = route.path.includes('.') ? route.path.split('.')[0] : route.path
+  const curCompPath = sidebarComponents.find((item) => {
+    if (item.link === path)
+      return item
+
+    return ''
+  })
+  const compLink = curCompPath?.link.replace('/components', '')
+  const compType = curCompPath?.type
 
   return import.meta.env.DEV
-    ? `http://localhost:5173/ui/#/pages/demo${path}/index`
-    : `/ui/#/pages/demo${path}/index`
+    ? `http://localhost:5173/ui/#/pages/demo/${compType}${compLink}/index`
+    : `/ui/#/pages/demo/${compType}${compLink}/index`
 })
 
 function enableTransitions() {
@@ -67,7 +76,7 @@ onMounted(() => {
     })
     window.addEventListener('message', (e) => {
       if (e.data.type === 'route') {
-        const path = e.data.data.split('/demo/').slice(1).join('/')
+        const path = e.data.data.split('/demo/').slice(1).join('/').split('/')[1]
         if (!path)
           return
 
