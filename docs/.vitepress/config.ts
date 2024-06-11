@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
-import { withPwa } from '@vite-pwa/vitepress'
+
+// import { withPwa } from '@vite-pwa/vitepress'
 import { components, guides, navComponents } from './items'
-import { pwa } from './scripts/pwa'
+
+// import { pwa } from './scripts/pwa'
 
 // https://vitepress.dev/reference/site-config
-export default withPwa(defineConfig({
+export default defineConfig({
   title: 'motui-uniapp',
   description: '移动端组件库，完全适配uni-app',
   lastUpdated: true,
@@ -19,10 +21,10 @@ export default withPwa(defineConfig({
     ],
     ['meta', { property: 'og:url', content: 'https://github.com/jynba/motui-uniapp' }],
     ['meta', { name: 'referrer', content: 'no-referrer' }],
-    ['link', { rel: 'icon', href: 'https://s2.loli.net/2023/08/30/1AxH9rbqi4kvCls.png', type: 'image/png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
   themeConfig: {
-    logo: 'https://s2.loli.net/2023/08/30/foMY3ui4nQpUA1C.png',
+    logo: '/logo-yellow.png',
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -71,5 +73,5 @@ export default withPwa(defineConfig({
       dark: 'vitesse-dark',
     },
   },
-  pwa,
-}))
+  // pwa,
+})

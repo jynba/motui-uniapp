@@ -177,7 +177,7 @@ export default {
     :closeOnClickOverlay="false"
   >
     <div class="tour-demo-custom-content">
-      <div>motui 4.x 即将发布，敬请期待</div>
+      <div>motui 即将发布，敬请期待</div>
       <mot-divider direction="vertical" />
       <div @click="showTour4 = false">知道了</div>
     </div>

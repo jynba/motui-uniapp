@@ -2,9 +2,9 @@
 
 > motui-uniapp 提供了 `npm` 和 `uni_modules` 两种方式使用组件。
 
-## NPM方式
+# NPM方式
 
-### 安装
+## 安装
 
 ---
 
@@ -24,18 +24,20 @@ npm install motui-uniapp
 
 :::
 
-### 配置
+## 配置
 
 ---
 
-#### 组件导入
+### 一、组件导入
 
 ::: warning 注意
 自动按需导入组件有 `unplugin` 和 `easycom` 两种方式，请勿混用~
 :::
 
-##### <Badge type="tip">推荐</Badge> unplugin方式
-
+##### 方法一： <Badge type="tip">推荐</Badge> unplugin方式
+::: warning 注意
+  `unplugin`方式引入组件后，小程序热更新无法直接更新，需要将 **小程序项目** 重启，组件才可生效
+:::
 - 安装插件
 
   > [@uni-helper/vite-plugin-uni-components](https://github.com/uni-helper/vite-plugin-uni-components)
@@ -86,8 +88,10 @@ npm install motui-uniapp
     shamefully-hoist=true # or public-hoist-pattern[]=@vue*
     ```
 
-##### easycom方式
-
+##### 方法二： easycom方式
+::: warning 注意
+  `easycom`方式引入组件后，需要将 **vscode项目** 重启，重新dev编译后，组件才可生效
+:::
 - 配置easycom
 
   > pages.json（若原本已存在easycom字段，则添加easycom.custom字段中的内容）
@@ -118,7 +122,7 @@ npm install motui-uniapp
     }
     ```
 
-#### 样式引入
+### 二、样式引入
 
 - 安装sass
 
@@ -155,7 +159,7 @@ npm install motui-uniapp
 
 - 样式变量
 
-  > 以下两种方式导入样式变量，任选其一即可
+  > 以下两种方式导入样式变量，**任选其一**即可
 
   - uni.scss
 
@@ -181,11 +185,11 @@ npm install motui-uniapp
     });
     ```
 
-#### API导入
-
-> 自 `1.7.5` 开始 `motui-uniapp` 提供了一些组合式函数，可以使用插件配置自动按需导入或者手动导入
-
-##### 自动按需导入
+### 三、API导入
+::: warning 注意
+组件的导入在上述已经完成，此处讲的是一些API，如`useToast`等的导入
+:::
+##### 方法一：自动按需导入
 
 - 安装插件
 
@@ -244,7 +248,7 @@ npm install motui-uniapp
   const toast = useToast();
   ```
 
-##### 手动导入
+##### 方法二：手动导入
 
 ```typescript
 // motui-uniapp提供的组合式函数都在composables模块下
@@ -268,7 +272,7 @@ const toast = useToast();
 </template>
 ```
 
-## uni_modules方式
+# uni_modules方式
 
 ### 下载
 
@@ -293,7 +297,6 @@ const toast = useToast();
 ```typescript
 // motui-uniapp提供的组合式函数都在composables目录下
 import { useToast } from "/uni_modules/motui-uni/components/composables";
-
 const toast = useToast();
 ```
 

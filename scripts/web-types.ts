@@ -14,7 +14,7 @@ function reWebTypesSource(title: string) {
     .replace(/^\w|\s+\w/g, item => item.trim().toUpperCase())
 
   return {
-    symbol: `Nut${name}`,
+    symbol: `Mot${name}`,
   }
 }
 
@@ -22,7 +22,7 @@ function reDocUrl(_: string, header?: string, path?: string) {
   if (path == null)
     return undefined
 
-  const url = `https://www.uniapp-nutui.tech/${path.substring(5, path.length - 3)}.html`
+  const url = `https://motui.cvcvcvcv.com/${path.substring(5, path.length - 3)}.html`
 
   const hash = `${header ? header.replace(/ +/g, '-').toLowerCase() : ''}`
 

@@ -53,13 +53,13 @@ export default {
   <view class="index t-bg-2">
     <view class="index-header t-bg-2">
       <image
-        src="https://s2.loli.net/2023/08/30/1AxH9rbqi4kvCls.png"
+        src="/static/logo-yellow.png"
         alt="" srcset=""
       />
       <view class="info">
         <h1 class="title">
           MotUI
-          <text class="ml-5px">
+          <text class="ml-[5px]">
             For UniAPP
           </text>
         </h1>
