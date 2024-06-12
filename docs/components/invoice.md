@@ -139,7 +139,7 @@ export default {
 | placeholder    | 输入框 `placeholder`                                               | string  |
 | radio-label    | 单选 `label`                                                       | string  |
 | form-item-prop | 表单域 `v-model` 字段， 在使用表单校验功能的情况下，该属性是必填的 | string  |
-| rules          | 校验规则，[可参考 FormItem Rule 数据结构](/components/dentry/form) | Array   |
+| rules          | 校验规则，[可参考 FormItem Rule 数据结构](/components/form) | Array   |
 | required       | 是否显示必填字段的标签旁边的红色星号                               | boolean |
 
 ### Events
@@ -152,7 +152,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/basic/configprovider)。
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/configprovider)。
 
 | 名称                  | 默认值         |
 | --------------------- | -------------- |

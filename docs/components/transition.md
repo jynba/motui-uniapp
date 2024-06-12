@@ -34,7 +34,7 @@
 
 ### 内置动画
 
-通过 name 属性设置内置动画，目前支持 `fade` `fade-up` `fade-down` f`ade-left` `fade-right` `slide-up` `slide-down` `slide-left` `slide-right` `zoom`
+通过 name 属性设置内置动画，目前支持 `fade` `fade-up` `fade-down` `fade-left` `fade-right` `slide-up` `slide-down` `slide-left` `slide-right` `zoom`
 
 ```html
 <template>
@@ -48,7 +48,7 @@
 
 | 参数           | 说明                                                                                                                                   | 类型                         | 默认值  |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------- |
-| name           | 内置动画名称，可选值为 `fade` `fade-up` `fade-down` f`ade-left` `fade-right` `slide-up` `slide-down` `slide-left` `slide-right` `zoom` | `NutAnimationName`           | `fade`  |
+| name           | 内置动画名称，可选值为 `fade` `fade-up` `fade-down` `fade-left` `fade-right` `slide-up` `slide-down` `slide-left` `slide-right` `zoom` | `NutAnimationName`           | `fade`  |
 | show           | 是否展示过渡动画级                                                                                                                     | boolean                      | `false` |
 | duration       | 动画时长，单位为毫秒                                                                                                                   | string \| number             | `300`   |
 | timingFunction | 动画函数                                                                                                                               | `NutAnimationtimingFunction` | `ease`  |

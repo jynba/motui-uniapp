@@ -449,7 +449,7 @@ List 属性是一个由对象构成的数组，数组中的每个对象配置一
 
 ### 样式变量
 
-组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/basic/configprovider)。
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/configprovider)。
 
 | 名称                                 | 默认值                 |
 | ------------------------------------ | ---------------------- |

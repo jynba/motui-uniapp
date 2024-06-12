@@ -324,7 +324,7 @@
 | v-model       | 是否处于选中状态                         | boolean          | `false` |
 | disabled      | 是否禁用选择                             | boolean          | `false` |
 | text-position | 文本所在的位置，可选值：`left`,`right`   | string           | `right` |
-| icon-size     | [图标尺寸](/components/basic/icon)       | string \| number | `18`    |
+| icon-size     | [图标尺寸](/components/icon)       | string \| number | `18`    |
 | label         | 复选框的文本内容                         | string           | -       |
 | indeterminate | 当前是否支持半选状态，一般用在全选操作中 | boolean          | `false` |
 | shape         | 形状，可选值：`button`、`round`          | String           | `round` |
@@ -368,7 +368,7 @@
 
 ### 样式变量
 
-组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/basic/configprovider)。
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/configprovider)。
 
 | 名称                                      | 默认值                   | 描述 |
 | ----------------------------------------- | ------------------------ | ---- |

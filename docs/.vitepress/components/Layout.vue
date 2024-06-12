@@ -12,7 +12,7 @@ const isComponentPage = computed(() => route.path.startsWith('/components'))
 const iframeUrl = computed(() => {
   const path = route.path.includes('.') ? route.path.split('.')[0] : route.path
   const curCompPath = sidebarComponents.find((item) => {
-    if (item.link === path)
+    if (item?.link === path)
       return item
 
     return ''

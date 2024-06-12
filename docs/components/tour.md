@@ -299,16 +299,16 @@ page{
 | offset                 | 镂空遮罩相对于目标元素的偏移量                                                                      | [number, number] | `[8, 10]`  |
 | current                | 类型为 `step` 时，默认展示第几步                                                                    | number           | `0`        |
 | custom-class           | 自定义 class 值                                                                                     | string           | ''         |
-| location               | 弹出层位置,同 Popopver 的[location 属性](/components/exhibition/popover)                            | string           | `'bottom'` |
+| location               | 弹出层位置,同 Popopver 的[location 属性](/components/popover)                            | string           | `'bottom'` |
 | next-step-Txt          | 下一步按钮文案                                                                                      | string           | `'下一步'` |
 | prev-step-Txt          | 上一步按钮文案                                                                                      | string           | `'上一步'` |
 | complete-txt           | 完成按钮文案                                                                                        | string           | `'完成'`   |
 | mask                   | 是否显示镂空遮罩                                                                                    | boolean          | `true`     |
 | bg-color               | 自定义背景色                                                                                        | boolean          | ''         |
-| theme                  | 气泡遮罩层主题,同 Popopver 的[theme 属性](/components/exhibition/popover)                           | string           | `'light'`  |
+| theme                  | 气泡遮罩层主题,同 Popopver 的[theme 属性](/components/popover)                           | string           | `'light'`  |
 | mask-width             | 镂空遮罩层宽度                                                                                      | number \|string  | ''         |
 | mask-height            | 镂空遮罩层高度                                                                                      | number \|string  | ''         |
-| close-on-click-overlay | 是否在点击镂空遮罩层后关闭,同 Popopver 的[closeOnClickOverlay 属性](/components/exhibition/popover) | Boolean          | `true`     |
+| close-on-click-overlay | 是否在点击镂空遮罩层后关闭,同 Popopver 的[closeOnClickOverlay 属性](/components/popover) | Boolean          | `true`     |
 | show-prev-step         | 是否展示上一步按钮                                                                                  | boolean          | `true`     |
 | show-title-bar         | 是否展示标题栏                                                                                      | boolean          | `false`    |
 
@@ -318,9 +318,9 @@ page{
 | -------------- | -------------------------------------------------------------------------------- | ---------------- | ---------- |
 | target         | 目标对象                                                                         | Element          | -          |
 | content        | 气泡层内容                                                                       | string           | ''         |
-| location       | 弹出层位置,同 Popopver 的[location 属性](/components/exhibition/popover)         | string           | `'bottom'` |
-| popover-offset | 气泡层偏移量，同 Popopver 的[offset 属性](/components/exhibition/popover)        | [number, number] | `[0, 12]`  |
-| arrow-offset   | 小箭头的偏移量，同 Popopver 的[arrowOffset 属性](/components/exhibition/popover) | number           | `0`        |
+| location       | 弹出层位置,同 Popopver 的[location 属性](/components/popover)         | string           | `'bottom'` |
+| popover-offset | 气泡层偏移量，同 Popopver 的[offset 属性](/components/popover)        | [number, number] | `[0, 12]`  |
+| arrow-offset   | 小箭头的偏移量，同 Popopver 的[arrowOffset 属性](/components/popover) | number           | `0`        |
 
 ### Slots
 

@@ -156,8 +156,8 @@ export const sidebarComponents: any[] = components.reduce((acc, cur: any) => {
 export const guides = [
   { text: '概览', link: '/guide/overview' },
   { text: '快速上手', link: '/guide/quick-start' },
+  { text: 'vscode 插件支持', link: '/guide/vscode-extension' },
   { text: '国际化', link: '/guide/i18n' },
   { text: '定制主题', link: '/guide/theme' },
-  { text: '注意事项', link: '/guide/faq' },
   { text: '更新日志', link: '/guide/changelog' },
 ]

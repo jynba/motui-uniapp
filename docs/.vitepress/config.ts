@@ -30,6 +30,7 @@ export default defineConfig({
     nav: [
       { text: '指南', items: guides },
       { text: '组件', items: navComponents },
+      { text: '贡献指南', link: 'https://github.com/jynba/motui-uniapp/CONTRIBUTING.md' },
     ],
 
     search: {

@@ -51,7 +51,7 @@ function reAttribute(value: string, key: string) {
 helper({
   name: pkg.name,
   version: pkg.version,
-  entry: 'docs/components/*/**/*.md',
+  entry: 'docs/components/**/*.md',
   outDir: 'packages/motui',
   space: 2,
 

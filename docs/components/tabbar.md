@@ -332,7 +332,7 @@
 | --------- | ---------------------------------------------- | ------ | ------------------ |
 | tab-title | 标签页的标题                                   | string | --                 |
 | name      | 标签名称，作为匹配的标识符                     | string | `当前标签的索引值` |
-| icon      | 标签页显示的[图标名称](/components/basic/icon) | string | --                 |
+| icon      | 标签页显示的[图标名称](/components/icon) | string | --                 |
 
 ### TabbarItem Slots
 
@@ -350,7 +350,7 @@
 
 ### 样式变量
 
-组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/basic/configprovider)。
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/configprovider)。
 
 | 名称                               | 默认值                   |
 | ---------------------------------- | ------------------------ |

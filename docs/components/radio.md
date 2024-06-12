@@ -181,7 +181,7 @@
 | 参数          | 说明                                                                          | 类型                        | 默认值   |
 | ------------- | ----------------------------------------------------------------------------- | --------------------------- | -------- |
 | disabled      | 是否禁用选择                                                                  | boolean                     | `false`  |
-| icon-size     | [图标尺寸](/components/basic/icon)                                            | string \| number            | `18`     |
+| icon-size     | [图标尺寸](/components/icon)                                            | string \| number            | `18`     |
 | label         | 单选框标识                                                                    | string \| number \| boolean | -        |
 | shape         | 形状，可选值为 button、round                                                  | string                      | `round`  |
 | size `v1.5.9` | 尺寸，可选值为 `large` `small` `mini` `normal`，仅在 shape 为 `button` 时生效 | string                      | `normal` |
@@ -211,7 +211,7 @@
 
 ### 样式变量
 
-组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/basic/configprovider)。
+组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](/components/configprovider)。
 
 | 名称                                  | 默认值                   |
 | ------------------------------------- | ------------------------ |
