@@ -22,7 +22,7 @@ motui-uniapp 组件库，基于Uni-app版[`NutUi`](https://nutui.jd.com/#/) 版�
 
 ## 贡献指南
 
-修改代码请阅读 [贡献指南](https://github.com/jynba/motui-uniapp/CONTRIBUTING.md)。
+修改代码请阅读 [贡献指南](https://github.com/jynba/motui-uniapp/blob/main/CONTRIBUTING.md)。
 
 
 ## 感谢
