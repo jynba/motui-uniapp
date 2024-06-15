@@ -36,3 +36,5 @@ example/src/pages.json
 packages/motui/web-types.json
 packages/motui/tags.json
 packages/motui/attributes.json
+
+motui-vscode-extension

@@ -11,7 +11,7 @@ motui-uniapp 组件库，基于[`NutUi`](https://nutui.jd.com) uni-app版本修�
 - 🚀 高质量组件，覆盖移动端主流场景
 - 💪 支持一套代码同时开发多端
 - 🍭 支持按需引用
-- 💪 支持 TypeScript
+- 🎉 支持 vscode 智能代码提示
 - 💪 支持动态定制主题
 - 🍭 支持暗黑模式
 - 🌍 支持国际化

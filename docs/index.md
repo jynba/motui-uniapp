@@ -10,19 +10,19 @@ hero:
   actions:
     - theme: brand
       text: 快速上手
-      link: /guide/overview
+      link: /guide/quick-start
 
 features:
   - icon: 🌈
     title: 组件设计
     details: 基于NutUi uni-app，使用 Vue、TypeScript 技术栈开发小程序应用，开箱即用，帮助研发快速开发用户界面。
     link: /guide/overview.html
-    linkText: 快速上手
+    linkText: 了解更多
   - icon: 🔥
     title: 按需引入
     details: 支持npm包引入，提供解析器以自动仅导入被使用的组件。
     link: /guide/quick-start.html
-    linkText: 了解更多
+    linkText: 快速上手
   - icon: 🎉
     title: 代码智能提示
     details:  提供vscode插件，支持 自动补全(包括默认props)、TS类型提示、跳转文档功能。

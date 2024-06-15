@@ -6,32 +6,32 @@ const needRefresh = ref(false)
 
 let updateServiceWorker: (() => Promise<void>) | undefined
 
-// function onOfflineReady() {
-//   offlineReady.value = true
-// }
-// function onNeedRefresh() {
-//   needRefresh.value = true
-// }
+function onOfflineReady() {
+  offlineReady.value = true
+}
+function onNeedRefresh() {
+  needRefresh.value = true
+}
 async function close() {
   offlineReady.value = false
   needRefresh.value = false
 }
 
-// onBeforeMount(async () => {
-//   const { registerSW } = await import('virtual:pwa-register')
-//   updateServiceWorker = registerSW({
-//     immediate: true,
-//     onOfflineReady,
-//     onNeedRefresh,
-//     onRegistered() {
-//       // eslint-disable-next-line no-console
-//       console.info('Service Worker registered')
-//     },
-//     onRegisterError(e) {
-//       console.error('Service Worker registration error!', e)
-//     },
-//   })
-// })
+onBeforeMount(async () => {
+  const { registerSW } = await import('virtual:pwa-register')
+  updateServiceWorker = registerSW({
+    immediate: true,
+    onOfflineReady,
+    onNeedRefresh,
+    onRegistered() {
+      // eslint-disable-next-line no-console
+      console.info('Service Worker registered')
+    },
+    onRegisterError(e) {
+      console.error('Service Worker registration error!', e)
+    },
+  })
+})
 </script>
 
 <template>

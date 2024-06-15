@@ -10,7 +10,7 @@
     "**/*.ts",
     "**/*.d.ts",
     "../docs/.vitepress/**/*.ts",
-    "../docs/.vitepress/**/*.vue"
+    "../docs/.vitepress/**/*.vue",
   ],
   "exclude": [
     "**/dist/**",
