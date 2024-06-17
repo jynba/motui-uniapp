@@ -9,7 +9,7 @@
     "docs"
   ],
   "scripts": {
-    "dev": "vitepress dev --port 9999",
+    "dev": "vitepress dev --port 9999 --host 0.0.0.0",
     "build": "vitepress build",
     "serve": "vitepress serve --port 6173"
   },
