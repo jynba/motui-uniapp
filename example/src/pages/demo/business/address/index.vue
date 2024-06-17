@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from 'vue'
-import type { AddressExistRegionData, AddressRegionData, AddressType } from 'nutui-uniapp'
+import type { AddressExistRegionData, AddressRegionData, AddressType } from 'motui-uniapp'
 
 /* eslint-disable no-console */
 interface CalBack {
@@ -251,9 +251,9 @@ export default defineComponent({
     <h2 class="title">
       选择自定义地址
     </h2>
-    <nut-cell title="选择地址" :desc="one" is-link @click="showAddress" />
+    <mot-cell title="选择地址" :desc="one" is-link @click="showAddress" />
 
-    <nut-address
+    <mot-address
       v-model:visible="normal"
       :province="address.province"
       :city="address.city"
@@ -266,9 +266,9 @@ export default defineComponent({
     <h2 class="title">
       选中省市区
     </h2>
-    <nut-cell title="选择地址" :desc="six" is-link @click="showSelected" />
+    <mot-cell title="选择地址" :desc="six" is-link @click="showSelected" />
 
-    <nut-address
+    <mot-address
       v-model="value"
       v-model:visible="select"
       :province="address.province"
@@ -283,9 +283,9 @@ export default defineComponent({
     <h2 class="title">
       选择自定义地址2
     </h2>
-    <nut-cell title="选择地址" :desc="five" is-link @click="showAddress2" />
+    <mot-cell title="选择地址" :desc="five" is-link @click="showAddress2" />
 
-    <nut-address
+    <mot-address
       v-model="value2"
       v-model:visible="normal2"
       type="custom2"
@@ -302,9 +302,9 @@ export default defineComponent({
     <h2 class="title">
       选择已有地址
     </h2>
-    <nut-cell title="选择地址" :desc="two" is-link @click="showAddressExist" />
+    <mot-cell title="选择地址" :desc="two" is-link @click="showAddressExist" />
 
-    <nut-address
+    <mot-address
       v-model:visible="exist"
       type="exist"
       :exist-address="existAddress"
@@ -317,9 +317,9 @@ export default defineComponent({
     <h2 class="title">
       自定义图标
     </h2>
-    <nut-cell title="选择地址" :desc="three" is-link @click="showCustomImg" />
+    <mot-cell title="选择地址" :desc="three" is-link @click="showCustomImg" />
 
-    <nut-address
+    <mot-address
       v-model:visible="customImg"
       type="exist"
       :exist-address="existAddress"
@@ -331,26 +331,26 @@ export default defineComponent({
       @selected="selected"
     >
       <template #unselectedIcon>
-        <nut-icon name="heart1" custom-style="margin-right: 8px" />
+        <mot-icon name="heart1" custom-style="margin-right: 8px" />
       </template>
       <template #icon>
-        <nut-icon name="heart-fill" custom-style="margin-right: 8px" custom-color="#f00" />
+        <mot-icon name="heart-fill" custom-style="margin-right: 8px" custom-color="#f00" />
       </template>
       <template #bottom>
-        <div class="nut-address-custom-buttom">
+        <div class="mot-address-custom-buttom">
           <div class="btn">
             自定义按钮
           </div>
         </div>
       </template>
-    </nut-address>
+    </mot-address>
 
     <h2 class="title">
       自定义地址与已有地址切换
     </h2>
-    <nut-cell title="选择地址" :desc="four" is-link @click="showAddressOther" />
+    <mot-cell title="选择地址" :desc="four" is-link @click="showAddressOther" />
 
-    <nut-address
+    <mot-address
       v-model:visible="other"
       type="exist"
       :exist-address="existAddress"
@@ -370,15 +370,15 @@ export default defineComponent({
 
 <style lang="scss">
 .demo {
-  .nut-cell {
+  .mot-cell {
     align-items: center;
 
-    .nut-cell__value {
+    .mot-cell__value {
       margin-right: 8px;
     }
   }
 
-  .nut-address-custom-buttom {
+  .mot-address-custom-buttom {
     width: 100%;
     height: 54px;
     padding: 6px 0px 0;
