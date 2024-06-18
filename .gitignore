@@ -13,7 +13,6 @@ uni_modules
 !uni_modules/package.json
 dist
 dev-dist
-locale
 cache
 *.local
 dist.zip
